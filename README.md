@@ -78,13 +78,12 @@
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=rahulpaul-07&theme=github_dark" alt="GitHub profile summary" />
+  <img width="49%" src="https://github-readme-stats-pearl-nu-60.vercel.app/api?username=rahulpaul-07&show_icons=true&theme=radical&hide_border=true&count_private=true&bg_color=0a0c12&title_color=54f0c8&icon_color=6d8bff&text_color=e7ecf5" alt="GitHub stats" />
   <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=rahulpaul-07&theme=radical&hide_border=true&background=0a0c12&ring=54f0c8&fire=6d8bff&currStreakLabel=54f0c8" alt="GitHub streak" />
 </p>
 
 <p align="center">
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=rahulpaul-07&theme=github_dark" alt="Top languages" />
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=rahulpaul-07&theme=github_dark" alt="Most used languages" />
+  <img width="49%" src="https://github-readme-stats-pearl-nu-60.vercel.app/api/top-langs/?username=rahulpaul-07&layout=compact&theme=radical&hide_border=true&bg_color=0a0c12&title_color=54f0c8&text_color=e7ecf5&langs_count=8" alt="Top languages" />
 </p>
 
 ---
