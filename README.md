@@ -74,16 +74,7 @@
 
 ---
 
-### 📊 GitHub Stats
-
-<div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=rahulpaul-07&show_icons=true&hide_border=true&theme=tokyonight" alt="Rahul's GitHub stats"/>
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rahulpaul-07&layout=compact&hide_border=true&theme=tokyonight" alt="Top languages"/>
-</div>
-
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=rahulpaul-07&hide_border=true&theme=tokyonight" alt="GitHub streak"/>
-</div>
+### 📊 LeetCode
 
 <div align="center">
   <img src="https://leetcard.jacoblin.cool/rahul_paul07?theme=dark&font=Baloo%202&ext=contest" alt="LeetCode stats"/>
