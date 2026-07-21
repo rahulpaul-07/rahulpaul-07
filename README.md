@@ -20,7 +20,7 @@
 - 🔬 Project Intern at **Samsung R&D Institute India (PRISM)** — building and compressing a multimodal vision-language model for on-device use.
 - 📄 Co-author of a **Springer Nature** book chapter on *Quantum Computing for IoT*.
 - 🧩 I like taking hard problems end to end — ML systems, production web apps, and security tooling — with tests, CI, and measurable results.
-- 🧮 Competitive programmer on **LeetCode** (rating **1821**, top **~7%**).
+- 🧮 Programmer on **LeetCode** (rating **1821**, top **~7%**).
 
 ---
 
