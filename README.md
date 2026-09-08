@@ -87,6 +87,23 @@ Browser-based 3D cube you can scramble and solve, using Herbert Kociemba's two-p
 
 ---
 
+## Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=rahulpaul-07&show_icons=true&hide_border=true&theme=tokyonight&count_private=true" alt="GitHub stats" height="165">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rahulpaul-07&layout=compact&hide_border=true&theme=tokyonight&langs_count=8" alt="Top languages" height="165">
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=rahulpaul-07&hide_border=true&theme=tokyonight" alt="Contribution streak">
+</p>
+
+<p align="center">
+  <img src="https://leetcard.jacoblin.cool/rahul_paul07?theme=dark&font=Baloo%20Da&ext=heatmap" alt="LeetCode stats">
+</p>
+
+---
+
 <p align="center">
   Open to software engineering internships. The fastest way to reach me is <a href="mailto:rahulami@gmail.com">email</a>.
 </p>
