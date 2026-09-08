@@ -1,94 +1,92 @@
-<h1 align="center">Hi, I'm Rahul Paul 👋</h1>
+<h1 align="center">Hi, I'm Rahul Paul</h1>
 
 <p align="center">
-  <b>Computer Science (Cyber Security) undergraduate</b> — building at the intersection of<br/>
+  <b>Computer Science (Cyber Security) undergraduate</b> — building at the intersection of<br>
   <b>machine learning</b>, <b>full-stack engineering</b>, and <b>security</b>.
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/rahul-paul-554225251"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="https://leetcode.com/u/rahul_paul07/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode"/></a>
-  <a href="mailto:rahulpaul.csetech@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-  <a href="https://rahulpaul-07.github.io"><img src="https://img.shields.io/badge/Portfolio-111111?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
+  <a href="LINKEDIN_URL"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="LEETCODE_URL"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode"></a>
+  <a href="mailto:rahulami@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+  <a href="https://rahulpaul-07.github.io"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"></a>
 </p>
 
 ---
 
-### 🧠 About me
+## About me
 
-- 🎓 B.E. in **Computer Science & Engineering (Cyber Security)** at **MS Ramaiah Institute of Technology** — CGPA **9.52 / 10**.
-- 🔬 Project Intern at **Samsung R&D Institute India (PRISM)** — building and compressing a multimodal vision-language model for on-device use.
-- 📄 Co-author of a **Springer Nature** book chapter on *Quantum Computing for IoT*.
-- 🧩 I like taking hard problems end to end — ML systems, production web apps, and security tooling — with tests, CI, and measurable results.
-- 🧮 Programmer on **LeetCode** (rating **1821**, top **~7%**).
-
----
-
-### 🚀 Featured Projects
-
-| Project | What it is | Links |
-|---|---|---|
-| 🛡️ **Sentinel** | Autonomous AppSec agent that **finds, proves (sandboxed PoC exploit), and fixes** source-code vulnerabilities; provider-agnostic via LiteLLM. | [Code](https://github.com/rahulpaul-07/sentinel) |
-| 📚 **Smart Course Generator** | Full-stack **AI learning platform** that generates multi-module courses streamed lesson-by-lesson, with quizzes, flashcards & AI mock interviews. | [Code](https://github.com/rahulpaul-07/smart-course-generator) · [Live](https://smart-course-generator.vercel.app) |
-| 🧊 **Rubik's Cube Studio** | **Kociemba two-phase solver** from scratch (~20.6 moves, 100% across 1,500+ cubes) driving a Three.js 3D cube with webcam scanning. | [Code](https://github.com/rahulpaul-07/rubiks-cube-studio) · [Live](https://rubiks-cube-studio.vercel.app) |
-| 🌐 **DNSentinel** | **DNS threat-intel platform** detecting DGA / tunneling / exfiltration / C2 with an RF + Isolation Forest ensemble and a SOAR layer mapped to MITRE ATT&CK. | [Code](https://github.com/rahulpaul-07/DNS_SENTINEL) · [Live](https://dns-sentinel.vercel.app) |
-
-<sub>➡️ More on the <a href="https://github.com/rahulpaul-07?tab=repositories">repositories tab</a> — including a C++ Rubik's solver, an ML botnet-traffic detector, and Gemini-powered Chrome extensions.</sub>
+- B.E. in **Computer Science & Engineering (Cyber Security)** at **MS Ramaiah Institute of Technology** — CGPA **9.52 / 10**.
+- **Project Intern at Samsung R&D Institute India (PRISM)** — building and compressing a multimodal vision-language model for on-device emotional and contextual captioning.
+- Co-author of a **Springer Nature** book chapter on *Quantum Computing for IoT*.
+- I like taking hard problems end to end — ML systems, production web apps, and security tooling — with tests, CI, and measurable results.
+- Programmer on **LeetCode** (rating **1821**, top ~7%).
 
 ---
 
-### 📝 Publication
+## Featured Projects
 
-**Applications of Quantum Computing for Internet of Things** — *Springer Nature* book chapter (pp. 79–121), 2026. &nbsp;[Read on Springer »](https://link.springer.com/chapter/10.1007/978-981-95-6276-3_3)
+### [Three-Way Financial Reconciliation Engine](https://github.com/rahulpaul-07/Three-Way-Financial-Reconciliation-Engine)
+Reconciles a merchant's order ledger against a payment gateway's report and the bank statement — three systems recording the same money that never agree. A tiered deterministic matcher resolves what it can; a bounded agent investigates the rest behind a verification gate that requires every claimed match to resolve to exactly one settlement, tie exactly on amount, and fall inside the payout window. Ambiguity that can't be resolved escalates rather than guessing, because a wrong match in financial data is invisible.
 
----
+- **90.8% resolved** and **100% classification accuracy across 14 classes**, graded against a ground-truth key the engine never reads. Across 12 independent batches: 92.7% ± 0.4% resolved, accuracy unchanged.
+- **111 tests** verified by mutation. CI asserts the exact accuracy figure, so a regression fails the build instead of quietly editing a number in the README. A separate job proves the engine still reconciles with no language model configured at all.
+- Contested matches solved jointly with a hand-implemented Hungarian algorithm, verified against brute force on 300 random matrices.
+- Scope stated honestly: the data is synthetic and generated by the same author, so the numbers show the engine catches the defect classes it was designed around — not performance on a real merchant's books.
+- **Python · FastAPI · pytest · GitHub Actions**
+- **[Live report](https://rahulpaul-07.github.io/Three-Way-Financial-Reconciliation-Engine/)** · **[Live app](https://recon-engine-yjim.onrender.com)** · **[Five-minute walkthrough](https://youtu.be/NjFKpmBX1Zk)**
 
-### 🛠️ Tech Stack
+### [Sentinel — Autonomous AppSec Agent](https://github.com/rahulpaul-07/Sentinel-Autonomous-AppSec-Agent)
+An agent that finds, **proves**, and patches code vulnerabilities. An LLM surfaces candidate findings; a validator generates a proof-of-concept exploit and runs it in a network-disabled Docker sandbox, discarding anything it cannot prove. The secure-fix patcher sits behind a human-approval gate.
 
-**Languages**  
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
+- A self-correction loop took recall from **60% to 100% at 100% precision** across five vulnerability classes on a reproducible eval harness.
+- Provider-agnostic model layer via LiteLLM (Ollama / Claude / OpenAI).
+- **Python · LiteLLM · Docker · Python AST · difflib · pytest · GitHub Actions**
 
-**AI / ML**  
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
-![ONNX](https://img.shields.io/badge/ONNX-005CED?style=flat-square&logo=onnx&logoColor=white)
-![Transformers](https://img.shields.io/badge/Transformers-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+### [DNSentinel — DNS Threat Intelligence Platform](https://github.com/rahulpaul-07/dns-sentinel)
+Full-stack detection platform for DGA, tunneling, exfiltration, and C2 beaconing. A 22-feature Random Forest and Isolation Forest ensemble feeds a SOAR auto-block/sinkhole layer mapped to MITRE ATT&CK, with SHAP-explained reports.
 
-**Web & GenAI**  
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white)
+- Threshold calibration against a false-positive budget cut false positives from **407 to 21 at unchanged recall**.
+- Benchmarked on 12,000 domains across 4 DGA families. The Zeek exfiltration sensor is vendored third-party (BSD-3).
+- **Python · FastAPI · React · scikit-learn · Docker · Chrome MV3 · pytest · GitHub Actions**
+- Live demo: **[dns-sentinel.vercel.app](https://dns-sentinel.vercel.app)**
 
-**Data & DevOps**  
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+### [Autonomous Choke Controller](https://github.com/rahulpaul-07/autonomous-choke-controller)
+Constrained model predictive control for a production choke on a naturally flowing oil well — the controller holds setpoints under process constraints instead of relying on manual operator adjustment.
 
----
+- Interactive simulation you can drive yourself: **[autonomous-choke-controller-v1.streamlit.app](https://autonomous-choke-controller-v1.streamlit.app)**
+- **Python · MPC · Streamlit**
 
-### 📊 LeetCode
+### [Smart Course Generator](https://github.com/rahulpaul-07/smart-course-generator)
+Web app that turns a topic into a structured course outline, built with a production workflow rather than a demo one — typed end to end, tested, containerized, and running on CI.
 
-<div align="center">
-  <img src="https://leetcard.jacoblin.cool/rahul_paul07?theme=dark&font=Baloo%202&ext=contest" alt="LeetCode stats"/>
-</div>
+- **React · Next.js · TypeScript · Jest · Supertest · Docker · GitHub Actions**
 
----
+### [Rubik's Cube Studio](https://github.com/rahulpaul-07/rubiks-cube-studio)
+Browser-based 3D cube you can scramble and solve, using Herbert Kociemba's two-phase algorithm via `cubejs`. Getting the CommonJS solver into a modern ESM build meant writing a small `require` shim and bridging it at runtime.
 
-### 🏆 Highlights
-
-- 🥇 **LeetCode** — Contest Rating **1821**, top **7.32%** globally (17 rated contests)
-- 📄 **Springer Nature** published author (book chapter)
-- 🔐 **IBM**-certified — Threat Intelligence & Hunting · Security Operations in Practice
-- 🎓 **Campus Ambassador** — Kshitij, IIT Kharagpur
+- **TypeScript · Vite · Three.js**
 
 ---
 
-<p align="center"><sub>📫 Reach me at <a href="mailto:rahulpaul.csetech@gmail.com">rahulpaul.csetech@gmail.com</a> · open to software engineering, ML, and security internships.</sub></p>
+## Research
+
+- **EmoCapNet** (Samsung PRISM) — multimodal vision-language model for emotion-aware captioning, compressed for on-device use. Currently writing it up for **ICASSP**.
+- **Springer Nature** book chapter — *Quantum Computing for IoT*.
+
+---
+
+## Tech
+
+**Languages** — C++, Python, TypeScript, JavaScript, SQL
+**ML** — PyTorch, scikit-learn, Hugging Face Transformers, SHAP
+**Web** — React, Next.js, FastAPI, Node.js
+**Infra & tooling** — Docker, GitHub Actions, pytest, Jest, Linux
+
+**Foundations** — Data Structures & Algorithms (C++), Operating Systems, DBMS, Computer Networks, OOP
+
+---
+
+<p align="center">
+  Open to software engineering internships. The fastest way to reach me is <a href="mailto:rahulami@gmail.com">email</a>.
+</p>
