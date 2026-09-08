@@ -78,9 +78,9 @@ Browser-based 3D cube you can scramble and solve, using Herbert Kociemba's two-p
 
 ## Tech
 
-**Languages** — C++, Python, TypeScript, JavaScript, SQL
-**ML** — PyTorch, scikit-learn, Hugging Face Transformers, SHAP
-**Web** — React, Next.js, FastAPI, Node.js
+**Languages** — C++, Python, TypeScript, JavaScript, SQL<br>
+**ML** — PyTorch, scikit-learn, Hugging Face Transformers, SHAP<br>
+**Web** — React, Next.js, FastAPI, Node.js<br>
 **Infra & tooling** — Docker, GitHub Actions, pytest, Jest, Linux
 
 **Foundations** — Data Structures & Algorithms (C++), Operating Systems, DBMS, Computer Networks, OOP
