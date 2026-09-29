@@ -26,15 +26,6 @@
 
 ## Featured Projects
 
-### [CourseAI — Smart Course Generator](https://github.com/rahulpaul-07/smart-course-generator)
-Turns one sentence into a structured course, streamed lesson by lesson, with quizzes, flashcards, a per-lesson tutor and scored mock interviews. Most of the code is about what happens when the model is slow, wrong or down.
-
-- Engineered a custom multi-provider AI router (Gemini → Groq → OpenRouter) with per-provider circuit breakers, retry with backoff, and timeouts, so an upstream outage or rate limit **degrades the response instead of failing it**.
-- Cut perceived latency by **streaming courses lesson-by-lesson over SSE**, so users see first output in seconds instead of waiting on a multi-minute generation. Secured it with rotating refresh tokens and per-route rate limiting.
-- Built the quality gate alongside the feature: **unit and integration tests, Playwright end-to-end suites, and autocannon load tests in CI**, plus an LLM-as-judge eval harness that fails the build on output-quality regressions.
-- **React · TypeScript · Node.js · Express · MongoDB · SSE · Zod · Jest · Playwright · autocannon · GitHub Actions**
-- **[Live demo](https://smart-course-generator.vercel.app/)**
-
 ### [Three-Way Financial Reconciliation Engine](https://github.com/rahulpaul-07/Three-Way-Financial-Reconciliation-Engine)
 Reconciles a merchant's order ledger against a payment gateway's report and the bank statement — three systems recording the same money that never agree.
 
@@ -45,14 +36,6 @@ Reconciles a merchant's order ledger against a payment gateway's report and the 
 - **Python · FastAPI · Uvicorn · pytest · mutation testing · GitHub Actions · Render**
 - **[Live dashboard](https://rahulpaul-07.github.io/Three-Way-Financial-Reconciliation-Engine/)** · **[Live app](https://recon-engine-yjim.onrender.com)** · **[Five-minute walkthrough](https://youtu.be/NjFKpmBX1Zk)**
 
-### [DNSentinel — DNS threat detection platform](https://github.com/rahulpaul-07/dns-sentinel)
-Detects DGA domains, DNS tunnelling and exfiltration, from sensor to analyst dashboard, with SOAR-style containment and a human in the loop.
-
-- Built a real-time detection platform: a FastAPI service over SQLAlchemy with 21 REST endpoints and **SSE live streaming** to a React dashboard. Availability is handled explicitly: a liveness probe returns 503 when the database degrades, and containment rules auto-expire after 24 h so a false positive cannot wedge the network.
-- Traced 407 false positives to the default 0.5 decision threshold, not the features, and recalibrated against an explicit false-positive budget: **407 → 21 at unchanged 100% recall** on 12,000 domains across 4 DGA families.
-- **Python · FastAPI · SQLAlchemy · SQLite · React · scikit-learn · Docker Compose · pytest · CodeQL**
-- **[Live demo](https://dns-sentinel.vercel.app)**
-
 ### [Sentinel — an AppSec agent that proves its findings](https://github.com/rahulpaul-07/Sentinel-Autonomous-AppSec-Agent)
 An LLM proposes vulnerabilities; Sentinel counts one only after an exploit has run against the real code in a network-off, unprivileged Docker sandbox **and a line tracer confirms the accused line executed**. Every candidate is graded on a five-tier evidence ladder, and each fix is checked by replaying the exploit that proved the bug.
 
@@ -62,13 +45,14 @@ An LLM proposes vulnerabilities; Sentinel counts one only after an exploit has r
 - **Python · LiteLLM · Docker · AST taint analysis · pytest · GitHub Actions**
 - **[Project page](https://rahulpaul-07.github.io/Sentinel-Autonomous-AppSec-Agent/)** · **[Sample report](https://rahulpaul-07.github.io/Sentinel-Autonomous-AppSec-Agent/sample-report.html)**
 
-### [Autonomous Choke Controller](https://github.com/rahulpaul-07/autonomous-choke-controller)
-A constrained model predictive controller that drives the production choke on a naturally flowing oil well to a requested oil rate — and when that rate is not safely reachable, says so, names the limit in the way, and produces the most it can instead. Written for Honeywell Campus Connect (hackathon round 2).
+### [CourseAI — Smart Course Generator](https://github.com/rahulpaul-07/smart-course-generator)
+Turns one sentence into a structured course, streamed lesson by lesson, with quizzes, flashcards, a per-lesson tutor and scored mock interviews. Most of the code is about what happens when the model is slow, wrong or down.
 
-- **0 constraint violations** across 30 nominal runs; under randomised model error in the hardest scenario, 7 of 150 runs brushed a limit (worst: 1.16 psi on a 2850 psi limit).
-- **+5.6% oil** over a cautious operator at the same zero violations; a conventional PI controller violates on 69% of intervals. Control model R² 0.983–0.993 on Honeywell's independent reference data.
-- **Python · MPC · Streamlit**
-- **[Try it in the browser](https://autonomous-choke-controller-v1.streamlit.app)**
+- Engineered a custom multi-provider AI router (Gemini → Groq → OpenRouter) with per-provider circuit breakers, retry with backoff, and timeouts, so an upstream outage or rate limit **degrades the response instead of failing it**.
+- Cut perceived latency by **streaming courses lesson-by-lesson over SSE**, so users see first output in seconds instead of waiting on a multi-minute generation. Secured it with rotating refresh tokens and per-route rate limiting.
+- Built the quality gate alongside the feature: **unit and integration tests, Playwright end-to-end suites, and autocannon load tests in CI**, plus an LLM-as-judge eval harness that fails the build on output-quality regressions.
+- **React · TypeScript · Node.js · Express · MongoDB · SSE · Zod · Jest · Playwright · autocannon · GitHub Actions**
+- **[Live demo](https://smart-course-generator.vercel.app/)**
 
 ### [Rubik's Cube Studio](https://github.com/rahulpaul-07/rubiks-cube-studio)
 Scan a real cube with your webcam, verify the colours, and watch a hand-written Kociemba two-phase solver drive an animated 3D solution.
@@ -77,6 +61,22 @@ Scan a real cube with your webcam, verify the colours, and watch a hand-written 
 - Webcam scanning with HSV colour classification, animated Three.js playback, and an installable offline PWA. 66 unit tests plus Playwright end-to-end tests.
 - **TypeScript · Three.js · Vite · Playwright**
 - **[Live demo](https://rubiks-cube-studio.vercel.app)**
+
+### [DNSentinel — DNS threat detection platform](https://github.com/rahulpaul-07/dns-sentinel)
+Detects DGA domains, DNS tunnelling and exfiltration, from sensor to analyst dashboard, with SOAR-style containment and a human in the loop.
+
+- Built a real-time detection platform: a FastAPI service over SQLAlchemy with 21 REST endpoints and **SSE live streaming** to a React dashboard. Availability is handled explicitly: a liveness probe returns 503 when the database degrades, and containment rules auto-expire after 24 h so a false positive cannot wedge the network.
+- Traced 407 false positives to the default 0.5 decision threshold, not the features, and recalibrated against an explicit false-positive budget: **407 → 21 at unchanged 100% recall** on 12,000 domains across 4 DGA families.
+- **Python · FastAPI · SQLAlchemy · SQLite · React · scikit-learn · Docker Compose · pytest · CodeQL**
+- **[Live demo](https://dns-sentinel.vercel.app)**
+
+### [Autonomous Choke Controller](https://github.com/rahulpaul-07/autonomous-choke-controller)
+A constrained model predictive controller that drives the production choke on a naturally flowing oil well to a requested oil rate — and when that rate is not safely reachable, says so, names the limit in the way, and produces the most it can instead. Written for Honeywell Campus Connect (hackathon round 2).
+
+- **0 constraint violations** across 30 nominal runs; under randomised model error in the hardest scenario, 7 of 150 runs brushed a limit (worst: 1.16 psi on a 2850 psi limit).
+- **+5.6% oil** over a cautious operator at the same zero violations; a conventional PI controller violates on 69% of intervals. Control model R² 0.983–0.993 on Honeywell's independent reference data.
+- **Python · MPC · Streamlit**
+- **[Try it in the browser](https://autonomous-choke-controller-v1.streamlit.app)**
 
 ---
 
